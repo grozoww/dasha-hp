@@ -321,7 +321,7 @@
     }
 
     .progress-label {
-      text-align: right;
+      text-align: center;
       font-size: 0.82rem;
       color: #9c6aae;
       margin-bottom: 5px;
@@ -702,7 +702,6 @@
         <div class="question-main">
           <img id="questionPhoto" class="question-photo" alt="">
           <div class="question-body">
-            <div class="question-num" id="questionNum">Питання 1</div>
             <div class="question-text" id="questionText"></div>
             <div class="options" id="optionsContainer"></div>
           </div>
@@ -817,7 +816,6 @@
     function renderQuestion() {
       answered = false;
       const q = questions[current];
-      document.getElementById('questionNum').textContent = `Питання ${current + 1}`;
       const photo = document.getElementById('questionPhoto');
       if (q.image) {
         photo.src = q.image;
